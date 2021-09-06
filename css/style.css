@@ -1,0 +1,297 @@
+body{
+  margin: 0px; /*commencer au bout de la page*/
+  padding: 0px;
+}
+header{
+  text-transform: uppercase; /*mettre le texte en majuscule*/
+  background-color: blue;
+  height: 68px; /*longueur de la ceinture*/
+}
+/*header .menu{
+  position: fixed;
+  width: 100%;
+}*/
+header h1{
+  color: white;
+  margin: 0 50px; /* marge haute et basse a 0 et gauche et droite 50px */
+  line-height: 65px; /*pour centrer le nom du site dans la ceinture*/
+  text-shadow: 3px 3px 3px red;
+}
+header nav{
+  float: right; /*ramener le menu a droite*/
+  /*decaler le nav vers le haut*/
+  position: relative; /*proprieté primordiale pour cet decalage*/
+  top:-65px; /*decalage de -65px le centrer*/
+}
+header nav ul li{
+  list-style: none;
+  float: left;
+  padding: 22px;
+  position: relative; /* pour disposer les élements par rapport au li qui le contient */
+  width: 200px; /* pour la largeur de chaque element du menu */
+}
+header nav ul{
+  margin: 0px;
+  padding: 0px;
+   text-align: center;
+}
+header nav ul li a{
+  text-decoration: none;
+  display: block; /*changement de type inline en type bloc pour utiliser la proprieté width*/
+  font-size: 20px; /* police du texte */
+  font-weight: bold;  /*epaisseur sur le texte 'gras'*/
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+/*sous menu*/
+header nav ul li ul {
+  background-color: blue;
+  position: absolute; /*sortir l'élement du flux normal d'affichage ---l'élement se positionne par rapport à son parent*/
+  visibility: hidden; /*pour cacher le sous menu 'hidden'*/
+  right: -195px; /*pour la largeur*/
+  top: 68px;
+  z-index: 1; /*à fin que le sous menu s'affiche au dessus de slide*/
+}
+header nav ul li ul li a{
+  width: 410px;
+  text-align: left;
+}
+header nav ul li:hover ul /*pour pouvoir afficher la liste deroulante dè qu'on se positionne sur un menu qui en possede*/{
+  visibility: visible;
+}
+header nav ul li:hover{
+  background-color: orange;
+}
+/*essai*/
+header nav ul li ul li a:hover{
+  background-color: black,
+}
+header #all-slider img{
+  width: 100%;
+}
+header #all-slider #slider{
+  width: 100%;
+  margin: 1em auto;
+  height: 500px; /*hauteur slider*/
+  overflow: hidden; /*cacher les photos à fin quelles puissent se comporte coe des diaporama*/
+  position: relative;/*à fin de modifier la disposition de slide*/
+  bottom: 63px; /*posser le slide vers le haut de '63px'*/
+} 
+.slide{
+  max-width: 100%;/*largeur en fonction de la taille de la fenetre*/
+  position: absolute;/*retirer le slide du flux normal d'affichage à fin de le modifier*/
+  left:0px;/*marge gauche par rapport au slide '0'*/
+  right:0px;/*marge droite par rapport au slide '0'*/
+  animation: slide 25s linear infinite;
+}
+/*ciblage et definition du delai*/
+.slide:nth-child(2){animation-delay: 5s;}
+.slide:nth-child(3){animation-delay: 10s;}
+.slide:nth-child(4){animation-delay: 15s;}
+.slide:nth-child(5){animation-delay: 20s;}
+
+/*etapes composants l'animation*/
+@keyframes slide{
+  0%,20%,40%,60%,80%,100% /*fixation de temps de dispersion*/{
+  opacity :0;
+    } 
+  5%,15%{/*affichage d'une image*/
+    opacity:1;
+  }
+}
+header #titre h3{
+  color: green;
+  font-size: 50px;
+  text-shadow: 1px 3px 3px black;
+}
+header #titre{
+  position: absolute;
+  top: 170px;
+  left: 70px;
+  /*background-color: white;*/
+  width: 720px;
+  text-align: center;
+}
+/***Bouttons***/
+.service, .contact {
+  padding: 20px 0px 20px 0px;
+  color: white;
+  border-radius: 50px;
+  font:bold 33px arial;
+  width: 350px;
+  box-shadow: 1px 1px 3px white;
+}
+.contact{
+  background-color: orange;
+}
+.service{
+  background-color: blue; 
+}
+.service a{
+  color: white;
+  text-decoration: none;
+}
+.contact a{
+  color: white;
+  text-decoration: none;
+}
+section#container{
+  position: relative;
+  top: 430px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+section#container #etapes img{
+  width: 120px;
+}
+/*un peu de trqite;ent sur les icones*/
+/*section#container #etapes .coception img , section#container #etapes .enLigne img{
+  width: 80px;
+  height: 80px;
+}
+section#container #etapes .developement img{
+  width: 120px;
+  height: 120px;
+}*/
+section#container #etapes div{
+  display: inline-block;
+  width: 400px;
+}
+section#container h4{
+  color: blue;
+  text-transform: uppercase;
+}
+section#container section >h4{
+  font-size: 50px;
+  border-bottom: 5px solid black;
+}
+section#container p{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+.button{
+  padding: 6px 10px 6px 10px;
+  border-radius: 50px;
+  background-color: red;
+  font: bold 13px arial;
+}
+.button a{
+  text-decoration: none;
+  color: white;
+}
+section#container section#service{
+  background-color: gray;
+  height: 100%;
+  padding-bottom: 50px;
+}
+section#container section#service div{
+  width: 460px;
+  height: 270px; 
+  display: inline-block;
+  border-radius: 10px;
+  margin-right: 70px;
+}
+section#container section#service div .info{
+  background-color: white ;
+  opacity: 0.8;
+  width: 78%;
+  position: relative;
+  right: 15px;
+}
+section#container #contact{
+  padding-bottom: 50px; /*pour ajouter une marge interieure entre la partie contact et footer*/
+}
+section#container #contact form{
+  width: 90%;
+  margin:  0 auto; /* haut et bas egal 0 et auto c pour centré le formulaire sur la page*/
+  padding: 1em;
+}
+section#container #contact label{
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  font-style: italic;
+}
+section#container #contact form input{
+  width: 78%; /*largeur case*/
+  height: 3em; /*hauteur case*/
+}
+section#container #contact form textarea{
+  width: 78%;
+  height: 17em;
+  cursor: pointer; /*curseur sous-for;e d'une main*/
+}
+section#container #contact form input[type="text"] /*ciblage des inputs ayant comme attribut type == text*/{
+  border-bottom: 2px solid #aaa;
+  border-right: 2px solid #aaa;
+  cursor: pointer;
+}
+::placeholder, textarea{
+  color: blue;
+  font-size: 1.3em;
+  font-style: italic;
+} 
+section#container #contact .Envoyer{
+  padding: 10px 15px;
+  background-color: #007e33;
+  border: none;
+  font: bold 13px arial;
+}
+section#container #contact .Envoyer a{
+  color: white;
+  text-decoration: none;
+}
+footer{
+  position: relative;
+  top: 400px;
+  background-color: #0247ee;
+  color: white;
+  text-align: center;
+}
+footer #titre-footer{
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+footer #titre-footer span.point{
+  color: red;
+  font-size: 100px;
+  text-shadow: 3px 3px 3px black;
+}
+footer #menu-footer a{
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding:15px 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+footer #menu-footer{
+  
+  margin-bottom: 5px;
+}
+footer #copy-footer{
+  background-color: blue;
+  height: 50px; /*hauteur ceinture*/
+  line-height: 50px; /*centrage du texte dans la ceinture*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

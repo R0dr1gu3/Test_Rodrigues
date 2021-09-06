@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Projet3</title>
+</head>
+<body>
+    <header>  
+        <div class="menu">
+        <h1>Site-name</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li><!--
+            --><li><a href="#etapes">Etapes</a>
+                    <ul>
+                        <li><a href="#etapes">conception</a></li>
+                        <li><a href="#etapes">developpement & test</a></li>
+                    <li><a href="#etapes">mise en ligne</a></li>
+                    </ul>
+                </li><!--
+            --><li><a href="#service">Services</a>
+                    <ul>
+                        <li><a href="#service">création site web</a></li>
+                        <li><a href="#service">hebergement</a></li>
+                    </ul>
+                </li><!--
+            --><li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="all-slider">
+            <ul id="slider">
+                <li class="slide"><img src="../image/nature-blossom-plant-photography-flower-petal-892143-pxhere.com.jpg" alt="image1"></li>
+                <li class="slide"><img src="../image/plant-deck-texture-plank-leaf-fall-95-pxhere.com.jpg" alt="image2"></li>
+                <li class="slide"><img src="../image/nature-blossom-plant-photography-stem-flower-713075-pxhere.com.jpg" alt="image3"></li>
+                <li class="slide"><img src="../image/water-branch-snow-cold-winter-drop-1363014-pxhere.com.jpg" alt="image4"></li>
+                <li class="slide"><img src="../image/water-nature-snow-cold-winter-drop-1048690-pxhere.com.jpg" alt="image5"></li>
+            </ul>
+        </div>
+        <div id="titre">
+            <h3>Nature secrete</h3>
+            <button type="button" name="button" class="service"><a href="#service">nos services</a></button>
+            <button type="button" name="button" class="contact"><a href="#contact">contactez-nous</a></button>
+        </div>
+    </header>
+    <section id="container">
+        <section id="etapes">
+            <h4>Etapes!</h4>
+            <div class="coception">
+                <img src="../image/1.png" alt=" image-onception">
+                <h4>Conception</h4>
+                <p>
+                    textetextetextetextetextetextetextetextetexte
+                    textetextetextetextetextetextetextetextetexte
+                    textetextetextetextetextetextetextetextetexte
+                </p>
+                <button type="button" name="button" class="button"><a href="">En savoir plus</a></button>
+            </div>
+            <div class="developement">
+                <img src="../image/2.png" alt=" image-developement">
+                <h4>Developement et test</h4>
+                <p>
+                    textetextetextetextetextetextetextetextetexte
+                    textetextetextetextetextetextetextetextetexte
+                    textetextetextetextetextetextetextetextetexte
+                </p>
+                <button type="button" name="button" class="button"><a href="">En savoir plus</a></button>
+
+            </div>
+            <div class="enLigne">
+                <img src="../image/3.png" alt=" image-Mise en ligne">
+                <h4>Mise en ligne</h4>
+                <p>
+                    textetextetextetextetextetextetextetextetexte
+                    textetextetextetextetextetextetextetextetexte
+                    textetextetextetextetextetextetextetextetexte
+                </p>
+                <button type="button" name="button" class="button"><a href="">En savoir plus</a></button>
+ 
+            </div>
+        </section>
+        <section id="service">
+            <h4>Nos services!</h4>
+            <div class="service1" style="background-image: url(../image/11.jpg);">
+               <div class="info">
+                    <h4>Creation des sites web</h4>
+                    <p>
+                        textetextetextetextetextetextetextetextetexte
+                        textetextetextetextetextetextetextetextetexte
+                        textetextetextetextetextetextetextetextetexte
+                    </p>
+                    <button type="button" class="button"><a href="">En savoir plus</a></button>
+               </div>
+            </div>
+            <div class="service2" style="background-image: url(../image/plant-deck-texture-plank-leaf-fall-95-pxhere.com.jpg);">
+                <div class="info">
+                    <h4>Hebergement</h4>
+                    <p>
+                        textetextetextetextetextetextetextetextetexte
+                        textetextetextetextetextetextetextetextetexte
+                        textetextetextetextetextetextetextetextetexte
+                    </p>
+                    <button type="button" class="button"><a href="">En savoir plus</a></button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h4>contactez-nous</h4>
+            <p>Pour nous contacter, merci de completer le formulaire ci-dessous</p>
+            <form action="">
+                <label for="">Nom :</label><br>
+                <input type="text" placeholder="Merci de saisir votre nom, exemple : Irenge"><br>
+                <label for="">Prénom :</label><br>
+                <input type="text" placeholder="Merci de saisir votre prénom, exemple : Rodrigue"><br>
+                <label for="">Télephone :</label><br>
+                <input type="text" placeholder="Entrer votre numéro de telephone, exemple : +243992829193"><br>
+                <label for="">Message</label><br>
+                <textarea name="message" id="" cols="80" rows="3">Merci de saisir votre message</textarea><br>
+                <button type="button" class="Envoyer"><a href="">Envoyer</a></button>
+            </form>
+        </section>
+    </section>
+    <footer>
+        <div id="titre-footer">
+            MonSite <span class="point">.</span>
+        </div>
+        <div id="menu-footer">
+            <span>
+                <a href="">| Accueil |</a>
+                <a href="#etapes">| Etapes |</a>
+                <a href="#service">| Services |</a>
+                <a href="#contact">| Contact |</a>
+            </span>
+        </div>
+        <div id="copy-footer">
+            ©2021 by Rodesign
+        </div>
+    </footer>   
+</body>
+</html>
